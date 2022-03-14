@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+#container{
+    width: 512px;
+    height: 384px;
+    background: url('village.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: contrast(1.1);
+    margin: 5% 0;
+    cursor: crosshair;
+}
+#widthChangingFrame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 384px;
+    /* filter: grayscale(100%) contrast(1.8); */
+    filter: grayscale(100%);
+    overflow: hidden;
+    width: 256px;
+    transition: width 1s ease,filter 0.5s ease;
+    /* transition: filter 0.5s ease; */
+}
+
+table{
+    width: 512px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2pc;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+input{
+    cursor: pointer;
+}
+
+#download{
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2.5pc;
+    padding: 0 2%;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    color: gold;
+    background: crimson;
+}
